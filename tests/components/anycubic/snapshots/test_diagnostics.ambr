@@ -1,0 +1,79 @@
+# serializer version: 1
+# name: test_diagnostics
+  dict({
+    'connected': True,
+    'discovery': dict({
+      'cn': '**REDACTED**',
+      'ctrlInfoUrl': 'http://192.168.1.50:18910/ctrl',
+      'ctrlType': 'lan',
+      'deviceType': 'fdm',
+      'modelId': 20025,
+      'modelName': 'Anycubic Kobra S1',
+      'token': '**REDACTED**',
+      'usn': '**REDACTED**',
+    }),
+    'printer': dict({
+      'mac': '**REDACTED**',
+      'model': 'Kobra S1',
+      'model_id': 20025,
+      'model_name': 'Anycubic Kobra S1',
+      'serial': '**REDACTED**',
+    }),
+    'state': dict({
+      'ace_boxes': list([
+      ]),
+      'ai_settings': None,
+      'camera_url': 'http://192.168.1.50:18088/flv',
+      'errors': dict({
+      }),
+      'external_filament_box': None,
+      'fans': dict({
+        'aux_fan_speed_pct': 20,
+        'box_fan_level': 0,
+        'fan_speed_pct': 55,
+      }),
+      'features': dict({
+        'auto_leveling_support': True,
+        'camera_timelapse_support': True,
+      }),
+      'file_upload_url': '**REDACTED**',
+      'firmware_version': '2.7.2.7',
+      'has_chamber': False,
+      'ip': '192.168.1.50',
+      'job': dict({
+        'current_layer': 3,
+        'filename': '.3mf_temp/benchy_plate(01)_PLA_0.2.gcode',
+        'local_task': 'b92a60d8-44d0-4b2a-916f-e5f476a07143',
+        'pause': False,
+        'print_status': 1,
+        'print_status_raw': 1,
+        'print_time': 7,
+        'progress': 60,
+        'project_type': 1,
+        'remain_time': 42,
+        'speed_mode_raw': None,
+        'state': 'printing',
+        'supplies_usage': 120,
+        'task_id': 614707220,
+        'total_layers': 5,
+      }),
+      'last_job': None,
+      'lights': list([
+      ]),
+      'model': 'Anycubic Kobra S1',
+      'peripherals': None,
+      'position': None,
+      'printer_name': 'Anycubic Kobra S1',
+      'printer_state': 'busy',
+      'speed_mode_raw': 3,
+      'temperatures': dict({
+        'bed': 60,
+        'bed_target': 60,
+        'chamber': None,
+        'chamber_target': None,
+        'nozzle': 219,
+        'nozzle_target': 220,
+      }),
+    }),
+  })
+# ---
