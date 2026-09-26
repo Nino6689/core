@@ -1,0 +1,107 @@
+rules:
+  # Bronze
+  action-setup:
+    status: exempt
+    comment: The integration does not register actions.
+  appropriate-polling:
+    status: done
+    comment: |
+      Reports are pushed over MQTT. The printer only answers queries for some
+      report kinds, so every kind is queried every 15 seconds.
+  brands:
+    status: done
+    comment: |
+      PENDING before submission: the anycubic brand images must be submitted
+      to home-assistant/brands; they do not exist yet.
+  common-modules: done
+  config-flow-test-coverage: done
+  config-flow: done
+  dependency-transparency:
+    status: done
+    comment: |
+      anycubic-lan is MIT licensed, has a public repository and a tagged-release
+      publish workflow. PENDING before submission: 0.1.0 is not on PyPI yet.
+  docs-actions:
+    status: exempt
+    comment: The integration does not register actions.
+  docs-conditions:
+    status: exempt
+    comment: The integration does not provide conditions.
+  docs-high-level-description:
+    status: done
+    comment: PENDING before submission - drafted for the home-assistant.io docs PR, not yet submitted.
+  docs-installation-instructions:
+    status: done
+    comment: PENDING before submission - drafted for the home-assistant.io docs PR, not yet submitted.
+  docs-removal-instructions:
+    status: done
+    comment: PENDING before submission - drafted for the home-assistant.io docs PR, not yet submitted.
+  docs-triggers:
+    status: exempt
+    comment: The integration does not provide triggers.
+  entity-event-setup:
+    status: done
+    comment: The coordinator subscribes to the library's callbacks; entities use CoordinatorEntity.
+  entity-unique-id: done
+  has-entity-name: done
+  runtime-data: done
+  test-before-configure: done
+  test-before-setup: done
+  unique-config-entry: done
+
+  # Silver
+  action-exceptions:
+    status: exempt
+    comment: The integration does not register actions.
+  config-entry-unloading: done
+  docs-configuration-parameters:
+    status: exempt
+    comment: The integration has no options flow.
+  docs-installation-parameters: todo
+  entity-unavailable: done
+  integration-owner: done
+  log-when-unavailable: done
+  parallel-updates: done
+  reauthentication-flow:
+    status: exempt
+    comment: |
+      No credentials are stored. The broker credentials are fetched from the
+      printer at every connection and rotate when it restarts.
+  test-coverage: done
+  # Gold
+  devices: done
+  diagnostics: done
+  discovery-update-info: done
+  discovery: done
+  docs-data-update: todo
+  docs-examples: todo
+  docs-known-limitations: todo
+  docs-supported-devices: todo
+  docs-supported-functions: todo
+  docs-troubleshooting: todo
+  docs-use-cases: todo
+  dynamic-devices:
+    status: exempt
+    comment: Each config entry is a single printer.
+  entity-category: done
+  entity-device-class: done
+  entity-disabled-by-default: done
+  entity-translations: done
+  exception-translations: done
+  icon-translations: done
+  reconfiguration-flow: done
+  repair-issues:
+    status: exempt
+    comment: There are no user-actionable issues to raise yet.
+  stale-devices:
+    status: exempt
+    comment: Each config entry is a single printer; removing the entry removes the device.
+
+  # Platinum
+  async-dependency:
+    status: done
+    comment: The library's API is asyncio; paho-mqtt's network loop runs in its own thread inside it.
+  inject-websession:
+    status: done
+    comment: The handshake uses Home Assistant's shared aiohttp session.
+  strict-typing: done
