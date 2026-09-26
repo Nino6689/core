@@ -1,0 +1,132 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]",
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "not_in_lan_mode": "[%key:component::anycubic::config::error::not_in_lan_mode%]",
+      "reconfigure_successful": "[%key:common::config_flow::abort::reconfigure_successful%]",
+      "unknown": "[%key:common::config_flow::error::unknown%]",
+      "unsupported_printer": "[%key:component::anycubic::config::error::unsupported_printer%]",
+      "wrong_device": "The address belongs to a different printer. Reconfigure the printer that was set up with this entry."
+    },
+    "error": {
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "not_in_lan_mode": "The printer answered, but LAN Mode is switched off. Switch it on at the printer under Settings > Network > LAN Mode.",
+      "unknown": "[%key:common::config_flow::error::unknown%]",
+      "unsupported_printer": "This printer does not support LAN Mode control."
+    },
+    "flow_title": "{name}",
+    "step": {
+      "discovery_confirm": {
+        "description": "Do you want to set up the {name} at {host}?"
+      },
+      "reconfigure": {
+        "data": {
+          "host": "[%key:common::config_flow::data::host%]"
+        },
+        "data_description": {
+          "host": "[%key:component::anycubic::config::step::user::data_description::host%]"
+        }
+      },
+      "user": {
+        "data": {
+          "host": "[%key:common::config_flow::data::host%]"
+        },
+        "data_description": {
+          "host": "The IP address or hostname of the printer, shown on its screen under Settings > Network. LAN Mode must be switched on there first (Settings > Network > LAN Mode)."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "auxiliary_fan_speed": {
+        "name": "Auxiliary fan speed"
+      },
+      "bed_target_temperature": {
+        "name": "Bed target temperature"
+      },
+      "bed_temperature": {
+        "name": "Bed temperature"
+      },
+      "chamber_temperature": {
+        "name": "Chamber temperature"
+      },
+      "fan_speed": {
+        "name": "Fan speed"
+      },
+      "job_current_layer": {
+        "name": "Current layer"
+      },
+      "job_elapsed": {
+        "name": "Print time"
+      },
+      "job_end_time": {
+        "name": "Print end time"
+      },
+      "job_name": {
+        "name": "Job name"
+      },
+      "job_progress": {
+        "name": "Print progress"
+      },
+      "job_remaining": {
+        "name": "Remaining time"
+      },
+      "job_status": {
+        "name": "Job status",
+        "state": {
+          "cancelled": "Cancelled",
+          "checking": "Checking",
+          "complete": "Complete",
+          "downloading": "Downloading",
+          "idle": "[%key:common::state::idle%]",
+          "levelling": "Levelling",
+          "preheating": "Preheating",
+          "printing": "Printing",
+          "slicing": "Slicing"
+        }
+      },
+      "job_total_layers": {
+        "name": "Total layers"
+      },
+      "last_error_code": {
+        "name": "Last error code"
+      },
+      "nozzle_target_temperature": {
+        "name": "Nozzle target temperature"
+      },
+      "nozzle_temperature": {
+        "name": "Nozzle temperature"
+      },
+      "speed_mode": {
+        "name": "Speed mode",
+        "state": {
+          "silent": "Silent",
+          "sport": "Sport",
+          "standard": "Standard"
+        }
+      },
+      "status": {
+        "name": "Status",
+        "state": {
+          "busy": "Busy",
+          "idle": "[%key:common::state::idle%]",
+          "paused": "[%key:common::state::paused%]",
+          "printing": "Printing"
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Could not connect to the printer at {host}: {error}"
+    },
+    "not_connected": {
+      "message": "The printer at {host} is not connected."
+    },
+    "wrong_device": {
+      "message": "A different printer answers at {host}. Reconfigure the entry with the printer's current address."
+    }
+  }
+}
