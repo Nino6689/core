@@ -1,0 +1,34 @@
+{
+  "type": "info",
+  "action": "report",
+  "state": "done",
+  "code": 200,
+  "msg": "done",
+  "data": {
+    "printerName": "Anycubic Kobra S1",
+    "model": "Anycubic Kobra S1",
+    "ip": "192.168.1.50",
+    "version": "2.7.2.7",
+    "state": "free",
+    "urls": {
+      "fileUploadurl": "http://192.168.1.50:18910/gcode_upload?s=SIGNED",
+      "rtspUrl": "http://192.168.1.50:18088/flv"
+    },
+    "temp": {
+      "curr_hotbed_temp": 31,
+      "curr_nozzle_temp": 34,
+      "target_hotbed_temp": 0,
+      "target_nozzle_temp": 0
+    },
+    "print_speed_mode": 2,
+    "fan_speed_pct": 0,
+    "aux_fan_speed_pct": 0,
+    "box_fan_level": 0,
+    "project": null,
+    "last_project": null,
+    "features": {
+      "auto_leveling_support": true,
+      "camera_timelapse_support": true
+    }
+  }
+}

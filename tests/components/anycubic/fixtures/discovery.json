@@ -1,0 +1,16 @@
+{
+  "ctrlType": "lan",
+  "token": "0123456789abcdeffedcba9876543210",
+  "ctrlInfoUrl": "http://192.168.1.50:18910/ctrl",
+  "modelId": "20025",
+  "cn": "SERIAL123",
+  "usn": "uuid:fdm:A4-E8-8D-80-54-C8",
+  "modelName": "Anycubic Kobra S1",
+  "deviceType": "fdm",
+  "ip": "192.168.1.50",
+  "deviceName": "Anycubic Kobra S1",
+  "zone": "global",
+  "env": "prod",
+  "rtspUrl": "http://192.168.1.50:18088/flv",
+  "fileUploadurl": "http://192.168.1.50:18910/gcode_upload?s=5f3a9c1e7b2d4a60"
+}

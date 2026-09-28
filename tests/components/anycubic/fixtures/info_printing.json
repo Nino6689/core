@@ -1,0 +1,50 @@
+{
+  "type": "info",
+  "action": "report",
+  "state": "done",
+  "code": 200,
+  "msg": "done",
+  "data": {
+    "printerName": "Anycubic Kobra S1",
+    "model": "Anycubic Kobra S1",
+    "ip": "192.168.1.50",
+    "version": "2.7.2.7",
+    "state": "busy",
+    "urls": {
+      "fileUploadurl": "http://192.168.1.50:18910/gcode_upload?s=SIGNED",
+      "rtspUrl": "http://192.168.1.50:18088/flv"
+    },
+    "temp": {
+      "curr_hotbed_temp": 60,
+      "curr_nozzle_temp": 219,
+      "target_hotbed_temp": 60,
+      "target_nozzle_temp": 220
+    },
+    "print_speed_mode": 3,
+    "fan_speed_pct": 55,
+    "aux_fan_speed_pct": 20,
+    "box_fan_level": 0,
+    "project": {
+      "remain_time": 42,
+      "curr_layer": 3,
+      "total_layers": 5,
+      "supplies_usage": 120,
+      "print_time": 7,
+      "progress": 60,
+      "state": "printing",
+      "print_status": 1,
+      "filename": ".3mf_temp/benchy_plate(01)_PLA_0.2.gcode",
+      "pause": 0,
+      "project_type": 1,
+      "task_id": 614707220,
+      "localtask": "b92a60d8-44d0-4b2a-916f-e5f476a07143",
+      "task_settings": { "camera_timelapse": 0 },
+      "print_speed_mode": null
+    },
+    "last_project": null,
+    "features": {
+      "auto_leveling_support": true,
+      "camera_timelapse_support": true
+    }
+  }
+}

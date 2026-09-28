@@ -1,0 +1,8 @@
+{
+  "type": "print",
+  "action": "pause",
+  "state": "failed",
+  "code": 10108,
+  "msg": "pause failed",
+  "data": null
+}

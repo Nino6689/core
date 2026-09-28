@@ -1,0 +1,48 @@
+{
+  "entity": {
+    "sensor": {
+      "auxiliary_fan_speed": {
+        "default": "mdi:fan"
+      },
+      "fan_speed": {
+        "default": "mdi:fan"
+      },
+      "job_current_layer": {
+        "default": "mdi:layers-outline"
+      },
+      "job_name": {
+        "default": "mdi:file-outline"
+      },
+      "job_progress": {
+        "default": "mdi:progress-clock"
+      },
+      "job_status": {
+        "default": "mdi:printer-3d",
+        "state": {
+          "cancelled": "mdi:cancel",
+          "complete": "mdi:check-circle-outline",
+          "idle": "mdi:sleep",
+          "printing": "mdi:printer-3d-nozzle"
+        }
+      },
+      "job_total_layers": {
+        "default": "mdi:layers-triple-outline"
+      },
+      "last_error_code": {
+        "default": "mdi:alert-circle-outline"
+      },
+      "speed_mode": {
+        "default": "mdi:speedometer"
+      },
+      "status": {
+        "default": "mdi:printer-3d",
+        "state": {
+          "busy": "mdi:timer-sand",
+          "idle": "mdi:sleep",
+          "paused": "mdi:pause-circle-outline",
+          "printing": "mdi:printer-3d-nozzle"
+        }
+      }
+    }
+  }
+}

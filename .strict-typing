@@ -85,6 +85,7 @@ homeassistant.components.anel_pwrctrl.*
 homeassistant.components.anova.*
 homeassistant.components.anthemav.*
 homeassistant.components.anthropic.*
+homeassistant.components.anycubic.*
 homeassistant.components.apache_kafka.*
 homeassistant.components.apcupsd.*
 homeassistant.components.api.*

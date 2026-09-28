@@ -46,6 +46,18 @@ DHCP: Final[list[dict[str, str | bool]]] = [
         "hostname": "gdocntl-*",
     },
     {
+        "domain": "anycubic",
+        "macaddress": "A4E88D*",
+    },
+    {
+        "domain": "anycubic",
+        "hostname": "anycubic*",
+    },
+    {
+        "domain": "anycubic",
+        "hostname": "kobra*",
+    },
+    {
         "domain": "august",
         "hostname": "connect",
         "macaddress": "D86162*",
