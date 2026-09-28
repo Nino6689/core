@@ -1,16 +1,15 @@
 """Common fixtures for the Anycubic tests."""
 
 from collections.abc import Callable, Generator
-from types import MappingProxyType
 from unittest.mock import AsyncMock, MagicMock, patch
 
 from anycubic_lan import (
     BrokerCredentials,
-    DiscoveryInfo,
     PrinterConnectionInfo,
     PrinterState,
     parse_message,
 )
+from anycubic_lan.handshake import parse_discovery
 import pytest
 
 from homeassistant.components.anycubic.const import DOMAIN
@@ -35,20 +34,9 @@ def state_from_fixture(*names: str) -> PrinterState:
 
 def make_connection_info(device_id: str = MOCK_DEVICE_ID) -> PrinterConnectionInfo:
     """Build what the handshake returns for the test printer."""
-    document = load_json_object_fixture("discovery.json", DOMAIN)
     return PrinterConnectionInfo(
         host=MOCK_HOST,
-        discovery=DiscoveryInfo(
-            token=document["token"],
-            ctrl_info_url=document["ctrlInfoUrl"],
-            model_id=document["modelId"],
-            ctrl_type=document["ctrlType"],
-            serial=document["cn"],
-            usn=document["usn"],
-            model_name=document["modelName"],
-            device_type=document["deviceType"],
-            raw=MappingProxyType(document),
-        ),
+        discovery=parse_discovery(load_json_object_fixture("discovery.json", DOMAIN)),
         credentials=BrokerCredentials(
             host=MOCK_HOST,
             port=9883,
